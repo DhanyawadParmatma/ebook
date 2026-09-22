@@ -7,7 +7,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;600;700&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        body { font-family: 'Hind', 'Poppins', sans-serif; background-color: #f8fafc; }
+        body { 
+            font-family: 'Hind', 'Poppins', sans-serif; 
+            background-color: #f8fafc; 
+            /* नीचे दी गई लाइनें टेक्स्ट को सेलेक्ट/कॉपी होने से रोकेंगी */
+            user-select: none; 
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
         .hero-bg { background-color: #0f172a; color: white; }
         .btn-pulse { animation: pulse 2s infinite; }
         @keyframes pulse {
@@ -42,7 +49,7 @@
             <img src="hero-image.png" alt="E-Book Bundle" class="mx-auto rounded-xl shadow-2xl mb-5 border-2 border-gray-700 max-w-full h-auto" style="max-height: 400px;">
 
             <a href="https://rzp.io/rzp/rdmebooks" class="btn-pulse inline-block w-full md:w-auto bg-yellow-400 text-gray-900 font-extrabold text-lg py-3 px-6 rounded-full shadow-xl hover:bg-yellow-300 transition duration-300">
-                👉 हाँ, मुझे यह खजाना चाहिए! (Donate & Download)
+                👉 हाँ, मुझे यह चाहिए! (Donate & Download)
             </a>
             <p class="text-xs text-gray-400 mt-2">🔒 100% सुरक्षित भुगतान Razorpay द्वारा</p>
         </div>
@@ -128,7 +135,7 @@
                 <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                     <p class="stars text-sm mb-1">★★★★★</p>
                     <p class="font-bold text-gray-800 text-sm">प्रिया सिंह</p>
-                    <p class="text-gray-600 mt-2 text-sm">"इतने कम डोनेशन में 200 किताबें और ऑडियोबुक्स? मुझे लगा फेक होगा, लेकिन पेमेंट करते ही लिंक मिल गया। धन्यवाद परमात्मा!"</p>
+                    <p class="text-gray-600 mt-2 text-sm">"इतने कम डोनेशन में 200 से अधिक किताबें और ऑडियोबुक्स? मुझे लगा फेक होगा, लेकिन पेमेंट करते ही लिंक मिल गया। धन्यवाद परमात्मा!"</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                     <p class="stars text-sm mb-1">★★★★★</p>
@@ -143,7 +150,7 @@
                 <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                     <p class="stars text-sm mb-1">★★★★★</p>
                     <p class="font-bold text-gray-800 text-sm">सुमित वर्मा</p>
-                    <p class="text-gray-600 mt-2 text-sm">"यह कोई साधारण बुक्स नहीं हैं, सच में लाइफ चेंजिंग हैं। हर स्टूडेंट और युवा को ये बंडल ज़रूर लेना चाहिए।"</p>
+                    <p class="text-gray-600 mt-2 text-sm">"यह कोई साधारण बुक्स नहीं हैं, सच में लाइफ चेंजिंग हैं। हर स्टूडेंट और युवा को ये बंडल ज़रूर लेना चाहिए।"</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                     <p class="stars text-sm mb-1">★★★★★</p>
@@ -180,7 +187,7 @@
             <div class="space-y-3">
                 <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                     <h3 class="font-bold text-sm md:text-base text-gray-900">प्रश्न: मुझे यह बंडल कैसे मिलेगा?</h3>
-                    <p class="text-gray-600 mt-1 text-sm">उत्तर: पेमेंट/डोनेशन सफल होते ही, आपको तुरंत उसी स्क्रीन पर और आपके ईमेल पर Google Drive का सुरक्षित लिंक मिल जाएगा।</p>
+                    <p class="text-gray-600 mt-1 text-sm">उत्तर: पेमेंट/डोनेशन सफल होते ही, आपको तुरंत उसी स्क्रीन पर और आपके ईमेल पर Google Drive का सुरक्षित लिंक मिल जाएगा。</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                     <h3 class="font-bold text-sm md:text-base text-gray-900">प्रश्न: क्या मैं इसे मोबाइल पर पढ़ सकता हूँ?</h3>
@@ -188,7 +195,7 @@
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                     <h3 class="font-bold text-sm md:text-base text-gray-900">प्रश्न: क्या ये किताबें हिंदी में हैं?</h3>
-                    <p class="text-gray-600 mt-1 text-sm">उत्तर: हाँ, ज़्यादातर किताबें बहुत ही सरल हिंदी भाषा में हैं। कुछ किताबें अंग्रेजी (English) में भी उपलब्ध कराई गई हैं।</p>
+                    <p class="text-gray-600 mt-1 text-sm">उत्तर: हाँ, ज़्यादातर किताबें बहुत ही सरल हिंदी भाषा में हैं। कुछ किताबें अंग्रेजी (English) में भी उपलब्ध कराई गई हैं।</p>
                 </div>
                 <div class="bg-white p-4 rounded-lg shadow-sm border border-gray-100">
                     <h3 class="font-bold text-sm md:text-base text-gray-900">प्रश्न: क्या मुझे हर महीने पैसे देने होंगे?</h3>
@@ -221,7 +228,9 @@
         </div>
     </footer>
 
+    <!-- Scripts: Timer & Anti-Copy Protection -->
     <script>
+        // --- 15 Minutes Countdown Timer ---
         let timeInSecs = 15 * 60;
         const timerDisplays = document.querySelectorAll('.timer-display');
         
@@ -239,6 +248,20 @@
                 timeInSecs--;
             }
         }, 1000);
+
+        // --- Security: Anti-Copy & Anti-Inspect ---
+        
+        // राइट क्लिक (Right Click) बंद करें
+        document.addEventListener('contextmenu', event => event.preventDefault());
+        
+        // कीबोर्ड शॉर्टकट बंद करें (F12, Ctrl+U, Ctrl+Shift+I आदि)
+        document.onkeydown = function(e) {
+            if(e.keyCode == 123) { return false; } // F12 Disable
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; } // Ctrl+Shift+I
+            if(e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; } // Ctrl+Shift+J
+            if(e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; } // Ctrl+U (View Source)
+            if(e.ctrlKey && e.keyCode == 'C'.charCodeAt(0)) { return false; } // Ctrl+C (Copy)
+        }
     </script>
 </body>
 </html>
